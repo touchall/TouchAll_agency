@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tuna_v23">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/tuna_v23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

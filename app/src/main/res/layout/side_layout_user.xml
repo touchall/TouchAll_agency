@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="274dip"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7f7f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="터치올 메뉴"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+
+                <!--&lt;!&ndash;-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_home"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="메인화면"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</LinearLayout>-->
+                <!--&ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_intro"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="소개"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_intro_company"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="  - 회사 소개"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_intro_touchall"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="  - 터치올 소개"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_find_store"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="가맹점 찾기"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_check_mypoint"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="여기 내 가용 보너스 조회. 사용"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_mypage"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="마이 페이지"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_my_info"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="  - My 정보조회,수정"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_my_bonus"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="  - My 보너스 조회"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_my_news"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="  - My 소식"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="12sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_event"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="이벤트"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_customer"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="고객센터"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_notice"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="  - 공지사항"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/btn_menu_faq"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dip"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="36dip"-->
+                        <!--android:layout_height="37dip"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="  - 자주묻는 질문"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textSize="15sp" />-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+
+
+        <ExpandableListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null" >
+        </ExpandableListView>
+
+        <View style="@style/line_gray_w" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

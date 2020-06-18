@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_communities.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_communities.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_icon_cloud.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_icon_cloud.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_action.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_action.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_people.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_people.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_icon_camera.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_icon_camera.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_delete.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_delete.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_pages.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_pages.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_photos.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_photos.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_home.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_whats_hot.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_whats_hot.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_drawer.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_drawer.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\drawer_shadow.9.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\drawer_shadow.9.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_content_remove.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_content_remove.png"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_content_add.png",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\drawable-hdpi\\ic_content_add.png"
+    }
+]

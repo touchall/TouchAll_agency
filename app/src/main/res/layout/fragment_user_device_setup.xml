@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_toolbar"
+            app:navigationIcon="@drawable/head_icon_close"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="보너스 설정 완료" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip">
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:id="@+id/tv_insert_point_franchisee"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_0075be"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_insert_point_result"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_0075be"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

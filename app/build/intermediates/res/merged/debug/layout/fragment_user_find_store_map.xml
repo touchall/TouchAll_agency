@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="가맹점 명"
+                android:textColorHint="@color/color_999">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_store_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

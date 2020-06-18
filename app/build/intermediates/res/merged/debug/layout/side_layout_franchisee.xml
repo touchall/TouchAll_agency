@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="274dip"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7f7f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="터치올 메뉴"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null" >
+        </ExpandableListView>
+
+        <View style="@style/line_gray_w" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

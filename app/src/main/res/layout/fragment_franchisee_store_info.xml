@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tuna.ui.BaseAppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_toolbar"
+            app:navigationIcon="@drawable/head_menu"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="My 가맹정보" />
+    </com.tuna.ui.BaseAppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="실등록 정보"
+                android:textColor="@color/color_2d97d9"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="상호"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_store_name"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="생년월일"
+                    android:inputType="date"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_birthday"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="20dip"
+                        android:text="대표자"/>
+
+                    <EditText
+                        android:id="@+id/franchiseeinfo_edit_ceo_name"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="40dip" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="비밀번호"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_password"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="대표 H.P"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_ceo_phone"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="Mail"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_store_mail"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="매장 Tel"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_store_tel"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="Fax No."/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_store_fax"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="대리자명"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_manager_name"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="H.P"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_manager_phone"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="대리자 Mail"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_manager_mail"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="업종"/>
+
+                <Spinner
+                    android:id="@+id/franchiseeinfo_spinner_earn"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="업종상세"/>
+
+                <Spinner
+                    android:id="@+id/franchiseeinfo_spinner_earn_detail"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="주소"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_address"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_address_detail"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="은행"/>
+
+                <Spinner
+                    android:id="@+id/franchiseeinfo_spinner_banks"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_bank_account"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="예금주"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_bank_account_user"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dip" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="광고 약정"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_ads"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="예고 이벤트"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_event"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="적립 보증금"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_deposit"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="WiFi환경"/>
+
+                <Spinner
+                    android:id="@+id/franchiseeinfo_spinner_wifi"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="LAN환경"/>
+
+                <Spinner
+                    android:id="@+id/franchiseeinfo_spinner_lan"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="가맹 연회비"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_annual_fee"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="월 관리비"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_maintenence_cost"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="비활성 유지비"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_non_active_cost"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="실등록일"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_reg_date"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="해지일"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_del_date"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="정지일"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_stop_date"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="최근 단말 설정일"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_current_setup"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="단말 시리얼 No"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_device_serial"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="담당 대리점"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_agent"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="연락처"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_agent_phone"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="유치유지인"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_agency"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="H.P No"/>
+
+                <EditText
+                    android:id="@+id/franchiseeinfo_edit_agency_phone"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="40dip" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip" />
+
+            <View style="@style/line_gray_w" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="터치올 단말 설정 상태"
+                android:textColor="@color/color_2d97d9"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="보너스 종류, 유형, 적립기준"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/color_0075be"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="효율"
+                        android:textColor="@color/color_0075be"
+                        android:textSize="12sp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_store_point"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="포인트"
+                                android:textColor="@color/color_0075be"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_store_stemp"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="스탬프"
+                                android:textColor="@color/color_0075be"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_store_game"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="가위바위보"
+                                android:textColor="@color/color_0075be"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/line_gray_w" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dip"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="60dip"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_store_total"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="통합"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="36.9%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_store_point"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기준금액당\n1개"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기본승점 X\n기준금액당 1게임승점"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="60dip"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_store_group"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="그룹"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="4.3%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_store_group_point"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기준금액당\n1개"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기본승점 X\n기준금액당 1게임승점"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="60dip"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_store_single"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="단독"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="2.2%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_store_single_point"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_store_single_stemp_money"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기준금액당\n-원당 1개"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_store_single_game_money"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기본승점 X\n기준금액 -원당 1게임승점"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_store_group_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="그룹형인 경우 ."/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="20dip"
+                android:text="보너스 우대"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="단골우대"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_store_vip_grade"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="2학년부터 -> 1학년씩 승급당 -% 추가"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="결제금액"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_store_paymoney"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="-원 이상 -% 추가"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="결제수단"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_store_pay_type"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="- -% 추가"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="지정시간"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_store_pay_time"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="00시 00분 ~ 00시 00분 -% 추가"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_store_device_timeout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="스마트폰 터치 대기시간 -초(30~120초 범위)"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip" />
+
+            <View style="@style/line_gray_w" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="스탬프 사용(결제) 취급 약정"
+                android:textColor="@color/color_2d97d9"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="※ 통합, 그룹형은 1688-2642 상의 후 ★부분 수정가능, 단독형은 * 부분 자체 수정가"
+                android:textSize="10sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="★* 스템프 사용지정 상품"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/edit_store_stemp_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="★* 지정상품 일반 판매가"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/edit_store_stemp_item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:text="-원"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="* 사용지정 상품 1개당 스템프 사용 가용 단위"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/edit_store_stemp_item_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:text="-개"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="사용 스템프 1개당 지급 결제액"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/edit_store_stemp_item_one_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:text="-원"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="* 가맹점 1회 이용시 스템프 사용 제한"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/edit_store_stemp_item_use_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:text="-회"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_franchisee_store_device_setup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="단말 보너스 설정정보 변경"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_franchisee_store_next"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="다음"
+                    android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/button_franchisee_store_update"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="수정"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

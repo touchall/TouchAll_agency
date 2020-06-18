@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_settting.xml",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\menu\\menu_settting.xml"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\menu\\user_setting.xml",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\menu\\user_setting.xml"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_map.xml",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\menu\\menu_map.xml"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_next.xml",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\menu\\menu_next.xml"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_ok.xml",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\menu\\menu_ok.xml"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_find.xml",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\menu\\menu_find.xml"
+    },
+    {
+        "merged": "C:\\Android\\Workspace\\TouchAll_agency\\app\\build\\intermediates\\res\\merged\\debug\\menu\\user_favorite.xml",
+        "source": "C:\\Android\\Workspace\\TouchAll_agency\\app\\src\\main\\res\\menu\\user_favorite.xml"
+    }
+]

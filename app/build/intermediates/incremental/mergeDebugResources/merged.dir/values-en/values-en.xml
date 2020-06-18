@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_menu">
+    </string-array>
+    <string-array name="menu_company">
+        <item>회사 소개</item>
+        <item>터치올 소개</item>
+    </string-array>
+    <string-array name="menu_customer">
+        <item>공지사항</item>
+        <item>자주묻는 질문</item>
+    </string-array>
+    <string-array name="menu_event">
+    </string-array>
+    <string-array name="menu_find_store">
+    </string-array>
+    <string-array name="menu_my_page">
+        <item>My 정보조회,수정</item>
+        <item>My 보너스 조회</item>
+        <item>My 소식</item>
+    </string-array>
+    <string-array name="menu_my_point">
+    </string-array>
+    <string-array name="nav_drawer_items">
+        <item>메인화면</item>
+        <item>소개</item>
+        <item>가맹점 찾기</item>
+        <item>여기 내 가용 보너스 조회. 사용</item>
+        <item>마이 페이지</item>
+        <item>이벤트</item>
+        <item>고객센터</item>
+    </string-array>
+    <string name="alarm_alarm">Notification</string>
+    <string name="app_name">Agency</string>
+    <string name="bank_prompt">은행</string>
+    <string name="comm_alert">Alert</string>
+    <string name="comm_cancel">Cancel</string>
+    <string name="comm_close">Close</string>
+    <string name="comm_no">No</string>
+    <string name="comm_ok">Ok</string>
+    <string name="comm_side_bottom_0">Help</string>
+    <string name="comm_side_bottom_1">Notice</string>
+    <string name="comm_side_bottom_2">Privacy Policy</string>
+    <string name="comm_side_bottom_3">Terms of Use</string>
+    <string name="comm_yes">Yes</string>
+    <string name="google_sender_id"/>
+    <string name="google_server_key"/>
+    <string name="hint_now_password">Current Password</string>
+    <string name="join_hint_id">ID (Email)</string>
+    <string name="join_hint_pw_0">Password</string>
+    <string name="join_hint_pw_1">Confirm Password</string>
+    <string name="login_btn_find_pw">Forget Your Password?</string>
+    <string name="login_btn_login">Login</string>
+    <string name="login_btn_reset_pw">Reset Password</string>
+    <string name="login_hint_phonenumber">PhoneNumber</string>
+    <string name="login_hint_pw">Password</string>
+    <string name="login_msg">Or Sign in with</string>
+    <string name="msg_cancel_camera_f">Photo taking is canceled</string>
+    <string name="msg_cancel_photo_f">Photo attachment is canceled</string>
+    <string name="msg_delete_account">Would you delete your account</string>
+    <string name="msg_error_coupon">Please enter the coupon code</string>
+    <string name="msg_error_coupon_code">Please enter the coupon code</string>
+    <string name="msg_error_find_email">Please enter your email address</string>
+    <string name="msg_error_find_fail">Unregistered email. \nPlease confirm and enter again</string>
+    <string name="msg_error_join_country">Please select your country </string>
+    <string name="msg_error_join_id">Please enter your ID</string>
+    <string name="msg_error_join_pw_0">Please enter your password</string>
+    <string name="msg_error_join_pw_1">Password is not correct</string>
+    <string name="msg_error_join_pw_3">Enter new password again</string>
+    <string name="msg_error_login_id">Please enter your phone number</string>
+    <string name="msg_error_login_pw">Please enter your password</string>
+    <string name="msg_error_permission">Permission is required</string>
+    <string name="msg_error_store_contents">Please enter your inquiry</string>
+    <string name="msg_error_store_id">Please enter your SNS ID</string>
+    <string name="msg_error_store_sns">Select SNS</string>
+    <string name="msg_error_translate_language">Please choose the target language</string>
+    <string name="msg_error_translate_text">Add the text(or image)</string>
+    <string name="msg_error_translate_voice">Record your voice</string>
+    <string name="msg_error_translate_voice_ing">Recording</string>
+    <string name="msg_exit_app">Press back again to exit</string>
+    <string name="msg_get_picture_f">Failed to attact image.Please try again</string>
+    <string name="msg_history_del">Do you wanna delete?</string>
+    <string name="msg_logout">Logout?</string>
+    <string name="msg_success_change_pw">Password Changed</string>
+    <string name="msg_success_find">E-mail has been sent</string>
+    <string name="msg_success_join">Complete register</string>
+    <string name="text_find">Please enter your register email\nThe password reset link will be sent to your e-mail address</string>
+    <string name="text_join_pw_0">Password must be between 6 to 12 characters without special characters</string>
+    <string name="text_join_pw_1">Please enter the password again to confirm</string>
+    <string name="text_user_copy">copy</string>
+    <string name="text_user_delete">delete</string>
+    <string name="text_user_report">report</string>
+    <string name="toolbar_alarm">Notification Setting</string>
+    <string name="toolbar_find">Find Password</string>
+    <string name="toolbar_help">Help</string>
+    <string name="toolbar_join">Sign Up</string>
+    <string name="toolbar_mypage">MyPage</string>
+    <string name="toolbar_mypage_modify">My page setting</string>
+    <string name="toolbar_notice">Notification</string>
+    <string name="toolbar_policy">Privacy Policy</string>
+    <string name="toolbar_tou">Terms of Use</string>
+</resources>

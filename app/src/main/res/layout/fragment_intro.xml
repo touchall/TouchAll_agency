@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:textColor="@color/waveform_unselected"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textColor="@color/waveform_unselected"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="적립 서비스 궁극의 종결자"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="100dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/intro_title" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/splash" />-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:scaleType="centerCrop"
+        android:padding="100dip"
+        android:src="@drawable/intro_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textColor="@color/color_e26a85"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="초간편"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textColor="@color/waveform_unselected"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="결제 후 그냥 스마트폰만 터치!"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textColor="@color/color_e26a85"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="100% 현금"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:textColor="@color/waveform_unselected"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="한번 터치할 때마다 평균 1,000원!"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:gravity="center"
+        android:textColor="@color/waveform_unselected"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:textColor="@color/waveform_unselected"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="폰 터치 시 꼭 NFC-on !"/>
+
+</LinearLayout>

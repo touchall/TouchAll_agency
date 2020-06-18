@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f4f4f4"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical">
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="17dip"
+                android:paddingRight="17dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="버전 정보"
+                            android:textColor="@color/color_666"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/btn_update_apk"
+                            android:layout_width="60dip"
+                            android:layout_height="40dip"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/rect_gray_radius"
+                            android:gravity="center"
+                            android:text="업데이트"
+                            android:textColor="@color/color_0075be" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="17dip"
+                android:paddingRight="17dip">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="자동 로그인 설정"
+                    android:textColor="@color/color_666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/switch_auto_login"
+                    android:layout_width="35dip"
+                    android:layout_height="22dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/sel_switch" />
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="17dip"
+                android:paddingRight="17dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="블루투스 설정 여부"
+                            android:textColor="@color/color_666"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/btn_bluetooth_setting"
+                            android:layout_width="60dip"
+                            android:layout_height="40dip"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/rect_gray_radius"
+                            android:gravity="center"
+                            android:text="설정"
+                            android:textColor="@color/color_0075be" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="17dip"
+                android:paddingRight="17dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="NFC 설정 여부"
+                            android:textColor="@color/color_666"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/btn_nfc_setting"
+                            android:layout_width="60dip"
+                            android:layout_height="40dip"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/rect_gray_radius"
+                            android:gravity="center"
+                            android:text="설정"
+                            android:textColor="@color/color_0075be" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="17dip"
+                android:paddingRight="17dip">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="위치정보 이용동의"
+                    android:textColor="@color/color_666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/switch_location_on"
+                    android:layout_width="35dip"
+                    android:layout_height="22dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/sel_switch" />
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="17dip"
+                android:paddingRight="17dip">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="PUSH 알림"
+                    android:textColor="@color/color_666"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/switch_push_on"
+                    android:layout_width="35dip"
+                    android:layout_height="22dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/sel_switch" />
+
+            </LinearLayout>
+
+            <!--
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="17dip"
+                android:paddingRight="17dip">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="로그아웃"
+                    android:textColor="@color/color_666"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            -->
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="17dip"
+                android:paddingRight="17dip">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="회원탈퇴는 홈페이지에서 가능합니다."
+                    android:textColor="@color/color_666"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:id="@+id/btn_firmware_update"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="17dip"
+                android:paddingRight="17dip">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="펌웨어 업데이트."
+                    android:textColor="@color/color_666"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

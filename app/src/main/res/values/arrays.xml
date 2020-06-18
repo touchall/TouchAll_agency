@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- User Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>메인화면</item>
+        <item>소개</item>
+        <item>가맹점 찾기</item>
+        <item>여기 내 가용 보너스 조회. 사용</item>
+        <item>마이 페이지</item>
+        <item>이벤트</item>
+        <item>고객센터</item>
+    </string-array>
+    <!-- Dash Board -->
+    <string-array name="main_menu">
+    </string-array>
+
+    <!-- Before you file -->
+    <string-array name="menu_company">
+        <item>회사 소개</item>
+        <item>터치올 소개</item>
+    </string-array>
+
+    <!-- My profile -->
+    <string-array name="menu_find_store">
+    </string-array>
+
+    <!-- Income Slip -->
+    <string-array name="menu_my_point">
+    </string-array>
+
+    <!-- Federal Deduction -->
+    <string-array name="menu_my_page">
+        <item>My 정보조회,수정</item>
+        <item>My 보너스 조회</item>
+        <item>My 소식</item>
+    </string-array>
+
+    <!-- Provincial Credits -->
+    <string-array name="menu_event">
+    </string-array>
+
+    <!-- Expenses -->
+    <string-array name="menu_customer">
+        <item>공지사항</item>
+        <item>자주묻는 질문</item>
+    </string-array>
+
+
+
+    <!--
+    *
+    * 가맹점 메뉴.
+    *
+    -->
+
+    <!-- User Nav Drawer Menu Items -->
+    <string-array name="franchisee_menu_items">
+        <item>홈</item>
+        <item>소개</item>
+        <item>My 가맹정보</item>
+        <item>My 매장소개</item>
+        <item>이용자 조회</item>
+        <item>상세 취급내역</item>
+        <item>주,월간 내역</item>
+        <item>My 맞춤판촉 Tip</item>
+        <item>공지,자료실</item>
+    </string-array>
+
+    <string-array name="franchisee_menu_home">
+    </string-array>
+
+    <string-array name="franchisee_menu_company_intro">
+        <item>회사 소개</item>
+        <item>터치올 소개</item>
+    </string-array>
+
+    <string-array name="franchisee_menu_store_info">
+    </string-array>
+
+    <string-array name="franchisee_menu_store_intro">
+    </string-array>
+
+    <string-array name="franchisee_menu_users_info">
+    </string-array>
+
+    <string-array name="franchisee_menu_detail_list">
+    </string-array>
+
+    <string-array name="franchisee_menu_monthly_list">
+    </string-array>
+
+    <string-array name="franchisee_menu_ad_tips">
+    </string-array>
+
+    <string-array name="franchisee_menu_notices">
+    </string-array>
+
+</resources>

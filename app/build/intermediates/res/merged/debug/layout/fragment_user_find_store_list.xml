@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:id="@+id/swipe_refresh"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+                android:id="@+id/find_store_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:paddingTop="10dip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="30dip"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="KR"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="단말기 SN"
+                            android:textColorHint="@color/color_999">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edit_store_serial"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/color_333"
+                                android:textSize="16sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dip"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="가맹점 명"
+                            android:textColorHint="@color/color_999">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edit_store_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:textColor="@color/color_333"
+                                android:textSize="16sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dip"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_find_store_city"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="30dip"/>
+
+                        <Spinner
+                            android:id="@+id/spinner_find_store_state"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="30dip"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dip"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_find_store_bounus_type"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="30dip"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dip"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_find_store_business_type"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="30dip"/>
+
+                        <Spinner
+                            android:id="@+id/spinner_find_store_business_detail"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="30dip"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/btn_find_store"
+                            android:layout_width="200dip"
+                            android:layout_height="30dip"
+                            android:background="@drawable/rect_gray_radius"
+                            android:gravity="center"
+                            android:text="검색"
+                            android:textColor="@color/color_0075be" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+            <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+            <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="상세 목록"
+                android:textColor="@color/color_666"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dip"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="KR"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="단말기 SN"
+                android:textColorHint="@color/color_999">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_store_serial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/color_333"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="가맹점 명"
+                android:textColorHint="@color/color_999">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_store_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/color_333"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_find_store_city"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="30dip"/>
+
+            <Spinner
+                android:id="@+id/spinner_find_store_state"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="30dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_find_store_bounus_type"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="30dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_find_store_business_type"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="30dip"/>
+
+            <Spinner
+                android:id="@+id/spinner_find_store_business_detail"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="30dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/btn_find_store"
+                android:layout_width="200dip"
+                android:layout_height="30dip"
+                android:background="@drawable/rect_gray_radius"
+                android:gravity="center"
+                android:text="검색"
+                android:textColor="@color/color_0075be" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    -->
+
+</android.support.design.widget.CoordinatorLayout>

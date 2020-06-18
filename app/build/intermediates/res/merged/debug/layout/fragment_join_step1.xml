@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tuna.ui.BaseAppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_toolbar"
+            app:navigationIcon="@drawable/head_icon_close"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/toolbar_join" />
+    </com.tuna.ui.BaseAppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="1. 약관 동의"
+                android:textColor="@color/color_2d97d9"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/check_join_step1_yes_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체항목 동의" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="필수동의항목"
+                android:textColor="@color/color_2d97d9"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="회원이용약관"
+                android:textColor="@color/color_2d97d9"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:orientation="horizontal"
+                android:paddingBottom="20dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <CheckBox
+                    android:id="@+id/check_join_step1_yes_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동의함" />
+
+                <CheckBox
+                    android:id="@+id/check_join_step1_no_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="동의안함" />
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/btn_join_step1_viewall_0"
+                        android:layout_width="60dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/rect_gray_radius"
+                        android:gravity="center"
+                        android:text="전문보기"
+                        android:textColor="@color/color_0075be" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="개인정보 수집 및 이용동의"
+                android:textColor="@color/color_2d97d9"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:orientation="horizontal"
+                android:paddingBottom="20dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <CheckBox
+                    android:id="@+id/check_join_step1_yes_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동의함" />
+
+                <CheckBox
+                    android:id="@+id/check_join_step1_no_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="동의안함" />
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/btn_join_step1_viewall_1"
+                        android:layout_width="60dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/rect_gray_radius"
+                        android:gravity="center"
+                        android:text="전문보기"
+                        android:textColor="@color/color_0075be" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="위치기반 서비스 이용약관"
+                android:textColor="@color/color_2d97d9"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:orientation="horizontal"
+                android:paddingBottom="20dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <CheckBox
+                    android:id="@+id/check_join_step1_yes_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동의함" />
+
+                <CheckBox
+                    android:id="@+id/check_join_step1_no_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="동의안함" />
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/btn_join_step1_viewall_2"
+                        android:layout_width="60dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/rect_gray_radius"
+                        android:gravity="center"
+                        android:text="전문보기"
+                        android:textColor="@color/color_0075be" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:id="@+id/btn_next"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dip"-->
+                <!--android:layout_marginTop="20dip"-->
+                <!--android:background="@drawable/rect_gray_radius"-->
+                <!--android:gravity="center"-->
+                <!--android:text="다음"-->
+                <!--android:textColor="@color/color_0075be" />-->
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/rect_gray_radius"
+                android:layout_marginTop="20dip"
+                android:enabled="false"
+                android:textColor="@color/sel_agree_selector"
+                android:text="다음" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

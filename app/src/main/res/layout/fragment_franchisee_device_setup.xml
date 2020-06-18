@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_toolbar"
+            app:navigationIcon="@drawable/head_icon_close"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="터치올 단말 설정(변경)" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip">
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:id="@+id/layout_bonus_pre_setup"
+                android:layout_width="match_parent"
+                android:layout_height="120dip"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:gravity="center"
+                        android:text="보너스 설정(변경) 가승인"
+                        android:textColor="@color/color_6a1b9a"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:gravity="center"
+                        android:text="아래 확인 후 반드시 하단 [최종 승인 신청] 후 \n60초 이내 단말에 테그하셔야 최종승인"
+                        android:textColor="@color/color_red"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/text_franchisee_deice_presetup_timeout"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dip"
+                        android:gravity="center"
+                        android:text="대기시간 60초"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_bonus_setup_complete"
+                android:layout_width="match_parent"
+                android:layout_height="120dip"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:gravity="center"
+                        android:text="단말 설정(변경)\n완료 되었습니다."
+                        android:textColor="@color/color_6a1b9a"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:id="@+id/tv_franchisee_device_setup_store_name"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/color_0075be"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dip"
+                    android:text="보너스 종류, 유형, 적립기준"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/color_0075be"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="효율"
+                        android:textColor="@color/color_0075be"
+                        android:textSize="12sp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_franchisee_store_point"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="포인트"
+                                android:textColor="@color/color_0075be"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_franchisee_store_stemp"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="스탬프"
+                                android:textColor="@color/color_0075be"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_franchisee_store_game"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="가위바위보"
+                                android:textColor="@color/color_0075be"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/line_gray_w" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dip"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="60dip"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_franchisee_store_total"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="통합"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="36.9%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_total_point"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기준금액당\n1개"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기본승점 X\n기준금액당 1게임승점"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="60dip"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_franchisee_store_group"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="그룹"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="4.3%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_group_point"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기준금액당\n1개"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기본승점 X\n기준금액당 1게임승점"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="60dip"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/check_franchisee_store_single"
+                                android:layout_width="30dip"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="단독"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="50dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="2.2%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_single_point"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-%"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_single_stemp_money"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기준금액당\n-원당 1개"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_single_game_money"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="기본승점 X\n기준금액 -원당 1게임승점"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_group_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="그룹형인 경우 ."/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="20dip"
+                    android:text="보너스 우대"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="단골우대"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_vip_grade"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="2학년부터 -> 1학년씩 승급당 -% 추가"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="결제금액"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_paymoney"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="-원 이상 -% 추가"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="결제수단"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_pay_type"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="- -% 추가"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="지정시간"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_pay_time"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="00시 00분 ~ 00시 00분 -% 추가"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_franchisee_store_device_timeout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="스마트폰 터치 대기시간 -초(30~120초 범위)"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_franchisee_store_device_setup_request"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="단말설정(변경) 신청"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

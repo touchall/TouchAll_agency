@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="library-circular-1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/f6c2c0ca8c9ba7ef859c7fa9c62cc9e159d3985e/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/f6c2c0ca8c9ba7ef859c7fa9c62cc9e159d3985e/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.castorflex.smoothprogressbar/library-circular/1.2.0/8b32499be46c96be14d5b7c7ff73164dddf1ccc6/library-circular-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

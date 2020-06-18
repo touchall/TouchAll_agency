@@ -1,0 +1,84 @@
+<resources>
+    <!-- Common -->
+    <string name="comm_alert">알림</string>
+    <string name="app_name">대리점</string>
+    <string name="comm_ok">확인</string>
+    <string name="comm_cancel">취소</string>
+    <string name="comm_yes">예</string>
+    <string name="comm_no">아니요</string>
+    <string name="comm_close">닫기</string>
+    <string name="msg_exit_app">한번 더  \&#39;뒤로가기 \&#39;를 누르시면 앱이 종료됩니다.</string>
+    <string name="msg_cancel_photo_f">이미지 첨부를 취소하였습니다.</string>
+    <string name="msg_get_picture_f">사진가져오기 실패하였습니다. 다시 시도해 주세요.</string>
+    <string name="msg_cancel_camera_f">사진촬영을 취소하였습니다.</string>
+
+    <!-- Common side-->
+    <string name="comm_side_bottom_0">가이드</string>
+    <string name="comm_side_bottom_1">공지사항</string>
+    <string name="comm_side_bottom_2">개인정보취급방침</string>
+    <string name="comm_side_bottom_3">이용약관</string>
+
+    <!-- common alarm-->
+    <string name="alarm_alarm">알림</string>
+    <!-- common msg-->
+    <string name="msg_logout">로그아웃 하시겠습니까?</string>
+    <string name="msg_history_del">삭제하시겠습니까?</string>
+    <string name="msg_delete_account">탈퇴 하시겠습니까?</string>
+    <!-- common_error_msg-->
+    <string name="msg_error_join_pw_3">Enter new password again</string>
+    <string name="msg_error_translate_language">번역이 필요한 언어를 선택해주세요.</string>
+    <string name="msg_error_translate_text">텍스트 또는 이미지를 추가해주세요.</string>
+    <string name="msg_error_translate_voice">Record your voice</string>
+    <string name="msg_error_translate_voice_ing">Recording</string>
+    <string name="msg_error_permission">권한이 필요합니다.</string>
+    <string name="msg_error_coupon">코드를 입력하세요.</string>
+    <string name="msg_error_login_id">전화번호를 입력해 주세요.</string>
+    <string name="msg_error_login_pw">패스워드를 입력해주세요.</string>
+    <string name="msg_error_join_id">아이디를 입력하세요.</string>
+    <string name="msg_error_join_pw_0">패스워드를 입력해주세요.</string>
+    <string name="msg_error_join_pw_1">비밀번호가 일치하지 않습니다.</string>
+    <string name="msg_error_join_country">국적을 선택해주세요 </string>
+    <string name="msg_error_find_fail">등록되지 않은 이메일 입니다.\n다시한번 확인후 입력해주시기 바랍니다.</string>
+    <string name="msg_error_find_email">이메일을 입력해 주세요.</string>
+    <string name="msg_error_store_id">SNS 아이디를 입력하세요.</string>
+    <string name="msg_error_store_contents">문의 내용을 입력하세요.</string>
+    <string name="msg_error_store_sns">Select SNS</string>
+    <string name="msg_error_coupon_code">Please enter the coupon code</string>
+    <!-- common_success_msg-->
+    <string name="msg_success_change_pw">비밀번호 변경</string>
+    <string name="msg_success_join">회원가입이 완료되었습니다.</string>
+    <string name="msg_success_find">메일이 발송되었습니다.</string>
+    <!-- common text-->
+    <string name="text_find">가입시 입력하신 이메일을 입력해주시기바랍니다.\n해당 이메일로 비밀번호 재설정 페이지를 발송해드립니다.</string>
+    <string name="text_join_pw_0">비밀번호는 6~12까지 특수문자를 제외하고 입력하세요.</string>
+    <string name="text_join_pw_1">위에서 입력한 동일한 비밀번호를 입력하세요.</string>
+    <string name="text_user_delete">삭제</string>
+    <string name="text_user_copy">복사</string>
+    <string name="text_user_report">신고하기</string>
+    <string name="hint_now_password">현재 비밀번호</string>
+    <!-- common toolbarTitle -->
+    <string name="toolbar_join">회원가입</string>
+    <string name="toolbar_find">비밀번호 찾기</string>
+    <string name="toolbar_help">Help</string>
+    <string name="toolbar_notice">Notification</string>
+    <string name="toolbar_alarm">Notification Setting</string>
+    <string name="toolbar_mypage">프로필</string>
+    <string name="toolbar_mypage_modify">My page setting</string>
+    <string name="toolbar_policy">개인정보취급방침</string>
+    <string name="toolbar_tou">이용약관</string>
+    <!-- Login -->
+    <string name="login_hint_phonenumber">전화번호</string>
+    <string name="login_hint_pw">비밀번호</string>
+    <string name="login_btn_login">로그인</string>
+    <string name="login_btn_reset_pw">비밀번호 재설정</string>
+    <string name="login_btn_find_pw">비밀번호를 잊어버리셨나요?</string>
+    <string name="login_msg">Or Sign in with</string>
+    <!-- Join -->
+    <string name="join_hint_id">이메일 입력</string>
+    <string name="join_hint_pw_0">비밀번호 입력</string>
+    <string name="join_hint_pw_1">비밀번호 재확인</string>
+
+    <!-- User end-->
+
+    <string name="bank_prompt">은행</string>
+</resources>

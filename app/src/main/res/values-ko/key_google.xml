@@ -1,0 +1,4 @@
+<resources>
+    <string name="google_sender_id"></string>
+    <string name="google_server_key"></string>
+</resources>

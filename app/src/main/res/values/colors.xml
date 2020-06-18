@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#0f3460</color>
+    <color name="primaryDark">#000</color>
+    <color name="colorAccent">#1b95d3</color>
+    <color name="color_control_highlight">#2e6a1b9a</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_red">#ff0000</color>
+
+    <color name="color_fbfbfb">#fbfbfb</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_ddd">#ddd</color>
+    <color name="color_ccc">#ccc</color>
+    <color name="color_333">#333</color>
+    <color name="color_666">#666</color>
+    <color name="color_999">#999</color>
+
+    <color name="color_7999b2">#7999b2</color>
+    <color name="color_c4dfec">#c4dfec</color>
+    <color name="color_1e91d4">#1e91d4</color>
+    <color name="color_toolbar">#0f3460</color>
+    <color name="color_0f3460">#0f3460</color>
+    <color name="color_54b0de">#54b0de</color>
+    <color name="color_2e98d6">#2e98d6</color>
+    <color name="color_1b95d3">#1b95d3</color>
+    <color name="color_c4deeb">#c4deeb</color>
+    <color name="color_2d97d9">#2d97d9</color>
+    <color name="color_0075be">#0075be</color>
+    <color name="color_6a1b9a">#6a1b9a</color>
+    <color name="color_f2f7fa">#f2f7fa</color>
+    <color name="color_7897b4">#7897b4</color>
+
+
+    <color name="color_e26a85">#e26a85</color>
+    <color name="color_f391bc">#f391bc</color>
+
+    <color name="waveform_selected">#33b5e5</color>
+    <color name="waveform_unselected">#195a72</color>
+    <color name="waveform_unselected_bkgnd_overlay">#0a242d</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#ffff66</color>
+    <color name="playback_indicator1">#eeee33</color>
+    <color name="grid_line">#66ffffff</color>
+    <color name="timecode">#ddffffdd</color>
+    <color name="timecode_shadow">#aa000000</color>
+
+
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#F0F014</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="non_editable_text_color">#FF0000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+</resources>

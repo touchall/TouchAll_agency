@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_toolbar"
+            app:navigationIcon="@drawable/head_icon_close"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="여기 내 가용 보너스 조회.사용" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:id="@+id/tv_mypoint_nfc_franchisee"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_0075be"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="보너스 종류"
+                    android:textColor="@color/color_0075be"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="누적합계"
+                        android:textColor="@color/color_0075be"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="가용합계"
+                        android:textColor="@color/color_0075be"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_franchisee_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="@color/color_e26a85"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="가용보너스"
+                        android:textColor="@color/color_0075be"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="사용유무"
+                    android:textColor="@color/color_0075be"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <View style="@style/line_gray_w" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="포인트"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_point_total_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="누적합계"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_point_total_canuse"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="가용합계"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_point_canuse"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="가용보너스"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/btn_point_use"
+                    android:layout_width="0dip"
+                    android:layout_height="24dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/rect_gray_radius"
+                    android:gravity="center"
+                    android:text="사용하기"
+                    android:textColor="@color/color_999"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="스탬프"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_stemp_total_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="누적합계"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_stemp_total_canuse"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="가용합계"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_stemp_canuse"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="가용보너스"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/btn_stemp_use"
+                    android:layout_width="0dip"
+                    android:layout_height="24dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/rect_gray_radius"
+                    android:gravity="center"
+                    android:text="사용하기"
+                    android:textColor="@color/color_999"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="가위바위보"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_game_total_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="누적합계"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/text_game_total_canuse"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="가용합계"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_game_canuse"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="가용보너스"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/btn_game_use"
+                    android:layout_width="0dip"
+                    android:layout_height="24dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/rect_gray_radius"
+                    android:gravity="center"
+                    android:text="사용하기"
+                    android:textColor="@color/color_999"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="한번 더 Tag를 하시면 핸드폰 정보가 단말기에 표기 됩니다."/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

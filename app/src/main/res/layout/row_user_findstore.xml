@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        style="@style/line_gray_w"
+        android:background="#ddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tv_findstore_list_thumb"
+            android:layout_width="60dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1"/>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_findstore_list_storename"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="아씨족발n보쌈이야기"
+                android:textColor="@color/color_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_findstore_list_address"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="서울시 금천구 독산…."
+                android:textColor="@color/color_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_findstore_list_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="전화번호 : 02-2354-xxxx"
+                android:textColor="@color/color_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_findstore_list_point"
+                android:layout_width="120dp"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_alignParentRight="true"
+                android:text="p : 2500 s : 35"
+                android:textColor="@color/color_1e91d4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_findstore_list_use"
+                android:layout_width="120dp"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="사용하기"
+                android:textColor="@color/color_1e91d4"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

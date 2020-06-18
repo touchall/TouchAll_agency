@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>메인화면</item>
+        <item>소개</item>
+        <item>가맹점 찾기</item>
+        <item>여기 내 가용 보너스 조회. 사용</item>
+        <item>마이 페이지</item>
+        <item>이벤트</item>
+        <item>고객센터</item>
+    </string-array>
+    <!-- Dash Board -->
+    <string-array name="main_menu">
+    </string-array>
+
+    <!-- Before you file -->
+    <string-array name="menu_company">
+        <item>회사 소개</item>
+        <item>터치올 소개</item>
+    </string-array>
+
+    <!-- My profile -->
+    <string-array name="menu_find_store">
+    </string-array>
+
+    <!-- Income Slip -->
+    <string-array name="menu_my_point">
+    </string-array>
+
+    <!-- Federal Deduction -->
+    <string-array name="menu_my_page">
+        <item>My 정보조회,수정</item>
+        <item>My 보너스 조회</item>
+        <item>My 소식</item>
+    </string-array>
+
+    <!-- Provincial Credits -->
+    <string-array name="menu_event">
+    </string-array>
+
+    <!-- Expenses -->
+    <string-array name="menu_customer">
+        <item>공지사항</item>
+        <item>자주묻는 질문</item>
+    </string-array>
+</resources>
